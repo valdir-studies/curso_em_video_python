@@ -5,4 +5,4 @@ def media(*args):
     
     return soma / len(args)
 
-print(media(10, 20))
+print(media(10, 20)) # 15.0
