@@ -6,5 +6,5 @@ def converter_moeda(reais):
     response = r.json()
     return reais / response.USDBRL.high
    
-    
-converter_moeda(10)
+real = float(input('Digite o valor em reais: R$'))
+print(f'Com R${real} você pode comprar U${converter_moeda(real)}')
