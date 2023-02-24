@@ -1,3 +1,6 @@
+# Exercício Python 12: Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+# Adaptação -> O usuário pode escolher qual é a taxa.
+
 def desconto(preco, taxa):
     preco = preco - (preco * ((taxa) / 100))
     return preco

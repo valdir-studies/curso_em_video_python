@@ -1,3 +1,6 @@
+# Exercício Python 13: Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+# Adaptação -> O usuário pode escolher qual é a taxa
+
 def reajuste(salario, taxa):
     salario = salario + (salario * ((taxa) / 100))
     return salario

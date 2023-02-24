@@ -1,3 +1,5 @@
+# Exercício Python 8: Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
 distancia = float(input('Digite a distância em metros: '))
 
 print(f'\n\nA medida de {distancia}m corresponde a:')
