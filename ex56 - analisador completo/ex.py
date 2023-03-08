@@ -2,6 +2,7 @@
 
 soma = 0
 cont_mulheres_novineas = 0
+maior_idade = 0
 
 for i in range(1, 5):
     print(f'{i}ª PESSOA')
