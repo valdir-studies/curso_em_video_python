@@ -8,9 +8,6 @@ D) Uma lista de pessoas com idade acima da média
 media_idade = 0
 pessoas = []
 
-def filtra_mulheres(p):
-    return p['sexo'] == 'F'
-
 while True:
     pessoa = {}
     pessoa['nome'] = input('Nome: ').title()
@@ -30,5 +27,5 @@ print(f'A) Ao todo temos {len(pessoas)} pessoas cadastradas.')
 print(f'B) A média de idade é de ')
 
 print('As mulheres são: ', end='')
-mulheres = filter(filtra_mulheres, pessoas)
-for mulher in mulheres: print(mulher['nome'], end=' ')
+mulheres = list(map(lambda p: p == 'F', pessoas))
+for mulher in mulheres: print(mulher, end=' ')
