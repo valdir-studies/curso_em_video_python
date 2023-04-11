@@ -23,4 +23,20 @@ def ler_arquivo(path):
         print('Erro ao ler o arquivo')
     else:
         cabecalho('Pessoas cadastradas')
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+
+            print(f'{dado[0]:<20} {dado[1]:>3} anos')
         print(a.read())
+    finally: a.close()
+
+def cadastrar(path, nome='desconhecido', idade=0):
+    try:
+        a = open(path, 'at')
+    except:
+        print('Houve um erro na abertura do arquivo!')
+    else:
+        a.write(f'{nome};{idade}\n')
+        print('Novo registro adicionado!')
+        a.close()
