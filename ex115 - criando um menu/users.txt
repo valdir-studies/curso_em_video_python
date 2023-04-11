@@ -1,0 +1,5 @@
+Gustavo;11
+Pedro;23
+Ana;64
+Bruna;16
+Julia;32
